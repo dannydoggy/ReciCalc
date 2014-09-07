@@ -1,6 +1,6 @@
 package food;
 
-public class OrganicGarlic implements Food{
+public class OrganicGarlic extends Produce implements Food{
 
 	@Override
 	public double getPrice() {
