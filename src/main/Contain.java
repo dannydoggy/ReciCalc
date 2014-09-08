@@ -2,9 +2,13 @@ package main;
 
 import food.Food;
 
-public class Order {
+public class Contain {
 	private double number;
 	private Food food;
+	public Contain(double number, Food food) {
+		this.number = number;
+		this.food = food;
+	}
 	public double getNumber() {
 		return number;
 	}

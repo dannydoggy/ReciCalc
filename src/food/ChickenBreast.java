@@ -1,6 +1,6 @@
 package food;
 
-public class ChickenBreast implements Food {
+public class ChickenBreast extends Meat implements Food {
 
 	@Override
 	public double getPrice() {

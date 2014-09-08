@@ -1,6 +1,6 @@
 package food;
 
-public class Corn implements Food {
+public class Corn extends Produce implements Food {
 
 	@Override
 	public double getPrice() {
