@@ -1,3 +1,7 @@
 ##ReciCalc
 
-The slolution for....
+The slolution for the assignment.
+
+#test
+
+Use JUnit to do tests.
