@@ -16,7 +16,7 @@ import food.Pepper;
 import food.Salt;
 import food.Vinegar;
 
-public class Recipet {
+public class Recipet implements Menu {
 	private static Map<String, List<Contain>> menu;
 	
 	static {
@@ -47,7 +47,8 @@ public class Recipet {
 		menu.put("Healthy Chicken Breast", contain2);
 	}
 	
-	public static List<Contain> getContains(String name) {
+	@Override
+	public List<Contain> getContains(String name) {
 		return menu.get(name);
 	}
 }

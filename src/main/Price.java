@@ -6,6 +6,18 @@ public class Price {
 	private double total;
 	private String name;
 	
+	public double getSaleTax()
+	{
+		return saleTax;
+	}
+	public double getWellnessDiscount()
+	{
+		return wellnessDiscount;
+	}
+	public double getTotal()
+	{
+		return total;
+	}
 	public Price(String name, double saleTax, double wellnessDiscount, double total) {
 		this.name = name;
 		this.saleTax = saleTax;
@@ -25,7 +37,7 @@ public class Price {
 		return Math.round(Math.ceil((total + roundTax() - roundDiscount()) * 100))/ 100.0;
 	} 
 	
-	public double roundDiscount() {
+	private double roundDiscount() {
 		long count = Math.round(Math.ceil(wellnessDiscount * 100));
 		return count / 100.0;
 	}

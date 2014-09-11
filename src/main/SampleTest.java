@@ -3,11 +3,13 @@ package main;
 public class SampleTest {
 
 	public static void main(String[] args) {
-		Price price = ReciCalc.calcPrice("Salad Dressing");
+		Menu menu = new Recipet();
+		ReciCalc reciCalc = new ReciCalc(menu);
+		Price price = reciCalc.calcPrice("Salad Dressing");
 		System.out.println(price);
-		price = ReciCalc.calcPrice("Healthy Chicken Breast");
+		price = reciCalc.calcPrice("Healthy Chicken Breast");
 		System.out.println(price);
-		price = ReciCalc.calcPrice("Pasta Fiesta");
+		price = reciCalc.calcPrice("Pasta Fiesta");
 		System.out.println(price);
 	}
 }
